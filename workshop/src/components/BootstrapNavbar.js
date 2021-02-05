@@ -4,6 +4,7 @@ import { Navbar, Nav } from 'react-bootstrap'
 import Home from '../pages/Home';
 import Apply from '../pages/Apply';
 import About from '../pages/about/About';
+import Footer from './Footer'
 
 const routes = [
     { name: 'About', route: '/about' },
@@ -41,6 +42,7 @@ export default function BootstrapNavbar() {
                     </Route>
                 </Switch>
             </Router>
+            <Footer />
         </div >
     );
 }
