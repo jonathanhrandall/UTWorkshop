@@ -12,8 +12,9 @@ import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import Box from '@material-ui/core/Box';
+import Paper from '@material-ui/core/Paper';
 import Footer from './Footer'
+
 
 
 
@@ -47,6 +48,10 @@ const useStyles = makeStyles((theme) => ({
             paddingBottom: theme.spacing(6),
         },
     },
+    photo: {
+        height: '100%',
+        width: '250px',
+    }
 }));
 
 
@@ -58,20 +63,23 @@ export default function Navbar() {
             <CssBaseline />
             <AppBar position="static" color="default" elevation={0} className={classes.appBar}>
                 <Toolbar className={classes.toolbar}>
-                    <Typography variant="h6" color="inherit" noWrap className={classes.toolbarTitle}>
+                    <Grid container spacing={0}>
+                        <img alt="panda" className={classes.photo} src={'https://i.imgur.com/f9oZGqP.png'} />
+                    </Grid>
 
-                        Diversity & Inclusion Workshop for Social Science Methods
+                    <Typography variant="h6" color="inherit" noWrap className={classes.toolbarTitle}>
+                        Social Science Workshop
                     </Typography>
                     <nav>
                         <Link variant="button" color="textPrimary" href="about" className={classes.link}>
                             About
-            </Link>
+                        </Link>
                         <Link variant="button" color="textPrimary" href="apply" className={classes.link}>
                             Apply
-            </Link>
+                        </Link>
                         <Link variant="button" color="textPrimary" href="resources" className={classes.link}>
                             Resources
-            </Link>
+                        </Link>
                     </nav>
                 </Toolbar>
             </AppBar>

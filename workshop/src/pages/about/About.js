@@ -5,6 +5,9 @@ import Link from '@material-ui/core/Link';
 
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
+import Header from './Header'
+import Body from './Body'
+
 import Box from '@material-ui/core/Box';
 import CssBaseline from '@material-ui/core/CssBaseline';
 
@@ -59,8 +62,13 @@ const useStyles = makeStyles((theme) => ({
 export default function About() {
     const classes = useStyles();
     return (
-        <Container maxWidth="md" className={classes.heroContent}>
-            <Typography> Hello </Typography>
-        </Container >
+
+        <React.Fragment>
+            <Header />
+            <Body />
+
+        </React.Fragment>
+
+
     );
 }
