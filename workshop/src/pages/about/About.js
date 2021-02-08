@@ -7,10 +7,7 @@ import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import Header from './Header'
 import Body from './Body'
-
-import Box from '@material-ui/core/Box';
-import CssBaseline from '@material-ui/core/CssBaseline';
-
+import Faculty from './Faculty'
 
 
 
@@ -66,6 +63,7 @@ export default function About() {
         <React.Fragment>
             <Header />
             <Body />
+            <Faculty />
 
         </React.Fragment>
 

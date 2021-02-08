@@ -50,7 +50,8 @@ const useStyles = makeStyles((theme) => ({
     },
     photo: {
         height: '100%',
-        width: '250px',
+        width: '200px',
+        paddingTop: '15px',
     }
 }));
 
