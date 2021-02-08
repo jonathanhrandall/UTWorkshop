@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
         bottom: 0,
         right: 0,
         left: 0,
-        backgroundColor: 'rgba(0,0,0,.3)',
+        backgroundColor: 'rgba(0,0,0,.4)',
     },
     mainFeaturedPostContent: {
         position: 'relative',
@@ -41,7 +41,7 @@ export default function Header(props) {
 
     return (
 
-        <Paper className={classes.mainFeaturedPost} style={{ backgroundImage: `url(https://i.imgur.com/BOc7P82.jpg)` }}>
+        <Paper className={classes.mainFeaturedPost} style={{ backgroundImage: `url(https://www.jasonmerlo.com/images/xl/2011070909-Live-oak-trees-on-the-South-Mall.jpg)` }}>
             {/* Increase the priority of the hero background image */}
             {<img style={{ display: 'none' }} src='https://liberalarts.utexas.edu/_internal/images/banners/depts-banners/government1.jpg' alt="UT Six pack" />}
             <div className={classes.overlay} />

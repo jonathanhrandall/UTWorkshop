@@ -1,7 +1,7 @@
 import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Home from '../pages/Home';
+import Home from '../pages/home/Home';
 import Apply from '../pages/Apply';
 import About from '../pages/about/About';
 import CssBaseline from '@material-ui/core/CssBaseline';

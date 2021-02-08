@@ -9,7 +9,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import CssBaseline from '@material-ui/core/CssBaseline';
-
+import Header from './Header'
 
 
 
@@ -52,6 +52,7 @@ export default function Album() {
 
     return (
         <React.Fragment>
+            <Header />
             <CssBaseline />
             <main>
                 {/* Hero unit */}

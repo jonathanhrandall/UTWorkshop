@@ -109,7 +109,7 @@ export default function Album() {
                 <Container className={classes.cardGrid} maxWidth="md">
                     <Grid container spacing={4}>
                         {profs.map((prof) => (
-                            <Grid item key={prof} xs={12} sm={6} md={4}>
+                            <Grid item key={prof} xs={3} >
                                 <Card className={classes.card}>
                                     <CardMedia
                                         className={classes.cardMedia}
@@ -117,16 +117,16 @@ export default function Album() {
                                         title={prof.name}
                                     />
                                     <CardContent className={classes.cardContent}>
-                                        <Typography gutterBottom variant="h5" component="h2">
+                                        <Typography gutterBottom variant="h6">
                                             {prof.name}
                                         </Typography>
-                                        <Typography variant="h6" gutterBottom>
+                                        <Typography variant="subtitle1" gutterBottom>
                                             {prof.title}
                                         </Typography>
-                                        <Typography gutterBottom>
+                                        <Typography variant="subtitle2" gutterBottom>
                                             {prof.education}
                                         </Typography>
-                                        <Typography>
+                                        <Typography variant="caption">
                                             {prof.interests}
                                         </Typography>
                                     </CardContent>

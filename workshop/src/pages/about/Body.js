@@ -1,14 +1,7 @@
 import React, { useState } from 'react';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
-import Link from '@material-ui/core/Link';
-
-import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
-import Header from './Header'
-import Box from '@material-ui/core/Box';
-import CssBaseline from '@material-ui/core/CssBaseline';
-
 
 
 
@@ -51,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
 export default function About() {
     const classes = useStyles();
     return (
-        <Container size="xl">
+        <Container size="lg" style={{ "padding-top": 50 }}>
             <Typography component="h4" variant="h2" gutterBottom>
                 Lorem ipsum.
             </Typography>
