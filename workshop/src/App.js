@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import BootstrapNavbar from './components/BootstrapNavbar'
+import MaterialNavbar from './components/MaterialNavbar'
 
 function App() {
   return (
     <div className="App">
-      <BootstrapNavbar />
+      <MaterialNavbar />
     </div>
   );
 }
